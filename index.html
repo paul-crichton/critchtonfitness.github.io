@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennis Crichton Fitness | Personal Training Metro Vancouver</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Expert Personal Training in Metro Vancouver. Serving White Rock, Surrey, Langley, and Delta. At-home training, fascial release, and private gym sessions with Dennis Crichton.">
+    <meta name="keywords" content="Personal Trainer, Fitness, Surrey, White Rock, Langley, Delta, Metro Vancouver, Fascial Release, Stretching, Home Gym">
+
+    <!-- Google Fonts: Anton (Brutalist) and Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Config for Brutalist Font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        brutal: ['Anton', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'coral': '#FF8C69', /* Muted Coral Orange */
+                        'off-black': '#0a0a0a',
+                        'concrete': '#f3f4f6'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Utilities */
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+
+        /* Marquee Animation */
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+        
+        .marquee-content {
+            display: inline-flex;
+            animation: scroll 80s linear infinite; /* Slowed down from 30s to 80s */
+        }
+        
+        /* Pause on hover for better readability */
+        .marquee-container:hover .marquee-content {
+            animation-play-state: paused;
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* Scroll Reveal Animation Classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Brutalist image borders */
+        .brutal-img {
+            filter: grayscale(100%);
+            transition: all 0.3s ease;
+        }
+        .brutal-img:hover {
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<body class="font-body overflow-x-hidden antialiased">
+
+    <!-- NAVIGATION / HEADER -->
+    <header class="w-full py-8 md:py-12 border-b border-zinc-800 bg-off-black relative z-50">
+        
+        <!-- Modified 3-Column Header Layout for Perfect Centering -->
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-center w-full">
+                
+                <!-- Left Name: Dennis (Aligns Right on Desktop) -->
+                <div class="flex-1 w-full md:w-auto text-center md:text-right order-1">
+                    <h1 class="text-6xl md:text-8xl lg:text-9xl font-brutal uppercase tracking-tight leading-none text-white">
+                        Dennis
+                    </h1>
+                </div>
+
+                <!-- Center: Logo & Fitness Stack -->
+                <div class="flex flex-col items-center justify-center mx-0 md:mx-8 shrink-0 order-2 md:order-2 my-6 md:my-0 relative z-10">
+                    <!-- LOGO SVG -->
+                    <div class="w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 flex-shrink-0 animate-pulse text-white">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="100%" height="100%" viewBox="0 0 672 1024" enable-background="new 0 0 672 1024" xml:space="preserve" class="fill-current">
+                        <path fill="currentColor" opacity="1.000000" stroke="none" 
+                            d="
+                        M174.291351,588.000000 
+                            C174.286896,655.826111 174.286697,723.152283 174.271973,790.478394 
+                            C174.270294,798.191467 173.973633,798.420593 166.352936,797.488159 
+                            C156.189651,796.244690 149.880539,788.741150 149.867126,777.726318 
+                            C149.819443,738.564026 149.793076,699.401672 149.783295,660.239380 
+                            C149.772385,616.577454 149.723740,572.915283 149.889709,529.253967 
+                            C149.906845,524.747864 148.572632,522.487854 144.309647,520.723633 
+                            C130.691528,515.087891 122.332733,504.376038 117.389313,490.817627 
+                            C111.580879,474.886841 109.392937,458.230591 107.814850,441.467163 
+                            C106.155960,423.845398 107.383850,406.143951 106.519623,388.528107 
+                            C105.510254,367.953705 121.954720,357.712616 140.689209,361.307587 
+                            C142.622406,361.678528 144.555481,362.050049 146.578857,362.438660 
+                            C148.347809,358.785645 146.781403,355.537659 146.353134,352.425262 
+                            C141.555161,317.555481 139.955460,282.739197 148.859604,248.262787 
+                            C163.909317,189.991165 197.045456,145.341476 250.069916,116.205452 
+                            C281.374756,99.003975 315.116913,90.025856 350.817291,92.137718 
+                            C430.758667,96.866661 489.186462,135.551132 525.491211,206.855362 
+                            C539.739929,234.840439 546.070190,265.013824 546.520447,296.498871 
+                            C546.804688,316.375641 545.224731,336.054779 542.550415,355.698425 
+                            C542.286926,357.634094 541.833130,359.631805 542.910767,361.976288 
+                            C547.913940,361.735443 552.925476,360.483917 558.076477,360.630402 
+                            C572.194580,361.031921 581.970459,370.983643 582.393433,385.053040 
+                            C583.074829,407.722260 582.625671,430.354889 580.151184,452.885376 
+                            C578.424072,468.610992 575.722900,484.181122 568.492004,498.597229 
+                            C563.322083,508.904419 555.615906,516.440735 544.924011,520.530212 
+                            C540.341370,522.282959 539.225830,524.881104 539.232605,529.480713 
+                            C539.353210,611.471802 539.317749,693.463135 539.300232,775.454407 
+                            C539.299622,778.439453 539.425720,781.410217 538.509888,784.366028 
+                            C535.739075,793.308838 527.216797,798.818848 518.046448,797.600281 
+                            C515.849060,797.308350 515.245422,796.081299 515.188110,794.260681 
+                            C515.083313,790.930115 515.014771,787.596985 515.013245,784.264893 
+                            C514.977356,703.940796 514.955505,623.616699 514.902588,543.292603 
+                            C514.901550,541.708740 515.389893,539.992737 513.848328,538.031921 
+                            C507.123383,545.553101 500.410522,552.852478 493.981110,560.393616 
+                            C492.312592,562.350647 493.217834,565.246216 493.216705,567.707031 
+                            C493.177490,652.531067 493.173218,737.355103 493.172638,822.179138 
+                            C493.172546,834.207642 487.398499,841.855469 476.728668,843.878113 
+                            C470.147491,845.125671 468.723816,843.975403 468.723022,837.250610 
+                            C468.714539,766.424866 468.680054,695.598999 468.805786,624.773499 
+                            C468.813782,620.283447 467.550232,616.881470 464.641205,613.546631 
+                            C446.906799,593.216431 424.398071,582.291077 397.843719,579.198730 
+                            C392.222046,578.544128 386.591736,577.868164 380.945801,577.543701 
+                            C375.156128,577.210938 369.483795,577.278259 363.686096,579.018433 
+                            C352.007721,582.523682 339.907166,582.749695 328.159973,579.555603 
+                            C321.418579,577.722534 314.781311,577.047546 307.965546,577.399292 
+                            C286.609131,578.501587 266.006439,582.382507 247.448608,593.901245 
+                            C237.983322,599.776306 229.972534,607.161804 223.021530,615.814514 
+                            C221.161270,618.130249 221.114090,620.658936 221.111984,623.343201 
+                            C221.056641,693.835083 220.986710,764.327026 220.921875,834.818909 
+                            C220.913055,844.408020 219.368484,845.602356 210.034317,843.202454 
+                            C201.839813,841.095459 196.590546,834.029358 196.591492,825.021362 
+                            C196.600357,741.530518 196.472885,658.039062 196.835007,574.549683 
+                            C196.875626,565.183472 195.013763,557.706726 187.848907,551.595459 
+                            C183.342773,547.751953 180.498093,542.217102 174.291306,537.594299 
+                            C174.291306,555.115173 174.291306,571.307556 174.291351,588.000000 
+                        M208.474152,363.903473 
+                            C207.342850,365.846985 205.221481,367.266541 205.204926,370.075928 
+                            C206.469116,370.516327 207.675705,371.026093 208.929092,371.360352 
+                            C245.437805,381.095184 281.941589,390.848969 318.480255,400.470215 
+                            C321.743439,401.329437 323.214905,402.660156 323.194092,406.213593 
+                            C322.940460,449.537384 322.889282,492.862427 322.589905,536.185791 
+                            C322.503235,548.722778 328.687561,556.603088 341.089630,558.755554 
+                            C355.187256,561.202454 368.187195,558.256165 380.371277,550.995361 
+                            C382.007721,550.020203 383.381042,548.275940 385.983734,548.693726 
+                            C385.699524,553.460999 388.979034,554.265747 392.740143,554.485229 
+                            C393.904266,554.553223 395.071655,554.595703 396.230713,554.715759 
+                            C421.043640,557.286255 444.102295,564.561646 464.108582,580.029541 
+                            C465.245453,580.908569 466.211212,582.221191 468.697845,581.747131 
+                            C468.697845,573.269409 468.830200,564.670532 468.634705,556.079102 
+                            C468.553009,552.489014 469.639618,549.788757 472.077423,547.144836 
+                            C485.404205,532.691406 498.524689,518.047791 511.855164,503.597778 
+                            C514.078491,501.187714 514.937805,498.711029 514.909851,495.535889 
+                            C514.805725,483.704590 514.955627,471.870941 514.836548,460.039948 
+                            C514.439331,420.578064 514.393738,381.162781 519.902344,341.923431 
+                            C522.892883,320.621185 523.503540,299.168854 520.861755,277.683380 
+                            C514.844116,228.740799 494.031464,187.669525 455.726105,156.231461 
+                            C416.623230,124.138824 371.442932,110.698700 321.436066,117.659782 
+                            C268.233490,125.065704 226.858749,152.562042 196.834473,197.110611 
+                            C195.654434,198.861496 195.204941,200.682007 195.218781,202.745773 
+                            C195.330582,219.427032 196.737869,236.015381 199.980820,252.359741 
+                            C205.635818,280.860840 215.973373,307.636597 231.078003,332.493103 
+                            C232.997147,335.651306 232.805176,337.504822 229.968033,340.009338 
+                            C222.082138,346.970673 215.154465,354.866425 208.474152,363.903473 
+                        M284.853058,499.544739 
+                            C287.024994,486.210022 287.271881,472.810913 286.800812,459.740204 
+                            C285.069946,458.663605 283.896515,459.068573 282.814331,459.378571 
+                            C258.470032,466.352722 234.139862,465.679474 209.873184,459.098175 
+                            C206.745056,458.249786 205.360687,459.175934 204.057175,461.856750 
+                            C200.693405,468.774780 198.416763,476.076416 195.827148,483.283234 
+                            C194.127533,488.013214 195.203796,491.279297 198.496399,494.858185 
+                            C210.977249,508.424316 224.910706,520.256836 240.208084,530.466492 
+                            C243.394424,532.593140 244.613937,534.918945 244.482010,538.661072 
+                            C244.217957,546.150879 244.309692,553.654968 244.357468,561.152527 
+                            C244.368500,562.881897 243.692932,564.851746 245.474274,566.330688 
+                            C255.180756,563.562256 263.347626,559.854553 268.067841,549.332520 
+                            C275.183594,533.470520 282.297852,517.795044 284.853058,499.544739 
+                        M544.749695,388.135803 
+                            C540.727722,390.882690 539.174561,394.451233 539.214539,399.536682 
+                            C539.451538,429.699097 539.312805,459.864380 539.350098,490.028687 
+                            C539.352051,491.594696 538.756470,493.336823 540.213501,494.975983 
+                            C543.793274,492.765991 545.823853,489.377625 547.647095,485.859314 
+                            C550.738708,479.893188 552.597717,473.513306 553.729675,466.911224 
+                            C557.938293,442.363495 558.722778,417.587341 558.648560,392.755615 
+                            C558.625488,385.040649 556.357910,383.454865 548.957947,385.998230 
+                            C547.708679,386.427612 546.549438,387.118866 544.749695,388.135803 
+                        M131.286453,424.443634 
+                            C131.300522,434.105133 132.309402,443.701813 133.542282,453.256195 
+                            C134.947021,464.142303 136.766434,474.994202 141.281403,485.124481 
+                            C142.914047,488.787689 144.631012,492.620270 148.904205,494.164764 
+                            C150.139389,492.542999 149.728195,490.997620 149.729233,489.550385 
+                            C149.750900,459.253052 149.747101,428.955688 149.742950,398.658356 
+                            C149.741974,391.569611 145.015900,386.279816 137.844894,385.314026 
+                            C132.478470,384.591278 131.296158,385.545654 131.272171,390.997894 
+                            C131.224579,401.817902 131.269150,412.638275 131.286453,424.443634 
+                        z"/>
+                        <path fill="currentColor" opacity="1.000000" stroke="none" 
+                            d="
+                        M444.933411,838.000000 
+                            C444.922455,848.830566 445.130768,859.167358 444.838501,869.489990 
+                            C444.523346,880.623718 437.389984,888.477966 427.490387,889.238708 
+                            C421.563751,889.694153 420.833771,889.063538 420.825409,883.092712 
+                            C420.775909,847.767761 420.736786,812.442749 420.718018,777.117798 
+                            C420.695679,735.127808 420.585693,693.137146 420.819550,651.148499 
+                            C420.851440,645.419556 418.775452,641.851501 414.369751,638.690613 
+                            C404.259125,631.436340 392.986511,627.968384 380.678284,627.911682 
+                            C356.694855,627.801270 332.710297,627.826172 308.726654,627.912476 
+                            C295.681763,627.959412 283.832611,631.574951 273.483002,639.874207 
+                            C270.282471,642.440674 269.141754,645.216003 269.146271,649.240723 
+                            C269.232300,725.555847 269.198029,801.871033 269.188721,878.186218 
+                            C269.188629,879.019348 269.189056,879.852478 269.186279,880.685608 
+                            C269.156433,889.613647 267.483459,890.897034 258.866394,888.603394 
+                            C249.993073,886.241577 244.866714,879.269958 244.842346,869.186707 
+                            C244.782745,844.526001 244.813690,819.865051 244.800186,795.204224 
+                            C244.771713,743.216492 244.775635,691.228699 244.632553,639.241272 
+                            C244.621597,635.256531 245.791168,632.347839 248.584717,629.541199 
+                            C264.551727,613.499390 283.577271,604.565002 306.343170,603.601501 
+                            C333.150970,602.466919 359.969360,602.162659 386.735840,603.858398 
+                            C409.249146,605.284729 427.742615,615.531555 442.888672,632.084778 
+                            C445.069275,634.467957 444.943451,637.221375 444.943329,640.046143 
+                            C444.941071,705.864075 444.936493,771.682068 444.933411,838.000000 
+                        z"/>
+                        <path fill="currentColor" opacity="1.000000" stroke="none" 
+                            d="
+                        M302.790344,831.000000 
+                            C302.780487,773.834290 302.770874,717.168579 302.763672,660.502869 
+                            C302.763428,658.669617 302.899445,656.828918 302.776764,655.004761 
+                            C302.524841,651.259155 303.903717,649.632080 307.928680,649.653931 
+                            C332.594147,649.788025 357.260834,649.767517 381.926758,649.686462 
+                            C385.343475,649.675232 386.631470,650.862000 386.622101,654.344177 
+                            C386.497833,700.507629 386.458984,746.671265 386.423340,792.834900 
+                            C386.391815,833.667419 386.427094,874.500061 386.352173,915.332458 
+                            C386.332367,926.124573 378.685913,933.988403 368.660522,934.372070 
+                            C364.164032,934.544128 362.563110,933.167114 362.589813,928.481995 
+                            C362.746643,900.983582 362.977295,873.477539 362.515778,845.985291 
+                            C361.592590,790.991638 362.119507,735.997925 361.943420,681.004578 
+                            C361.924591,675.129211 361.266968,674.442871 355.278473,674.380798 
+                            C348.446014,674.309998 341.612091,674.344666 334.779053,674.382324 
+                            C328.119873,674.419067 327.351990,675.165039 327.342712,681.900879 
+                            C327.281494,726.233459 327.239563,770.566040 327.205536,814.898621 
+                            C327.177002,852.064514 327.178497,889.230347 327.141296,926.396240 
+                            C327.133331,934.357727 325.319031,935.746094 317.507324,933.986145 
+                            C308.587128,931.976440 302.833191,924.467224 302.815216,914.499756 
+                            C302.765289,886.833252 302.793549,859.166565 302.790344,831.000000 
+                        z"/>
+                        <path fill="currentColor" opacity="1.000000" stroke="none" 
+                            d="
+                        M454.977295,377.809143 
+                            C468.211212,374.197540 481.079803,370.790710 493.862854,367.088501 
+                            C497.632111,365.996796 499.438721,366.207947 499.404114,370.771118 
+                            C499.365051,375.918518 499.833374,381.079620 500.281555,386.217285 
+                            C500.564270,389.457825 499.340118,390.815369 496.144623,391.735474 
+                            C477.115662,397.214508 458.050507,402.546753 438.833374,407.329834 
+                            C437.290710,407.713776 435.581146,407.771576 433.896393,409.738770 
+                            C451.449890,414.226013 468.580688,418.605164 486.315857,423.138824 
+                            C484.173065,427.446228 481.385986,430.423798 478.384064,433.205444 
+                            C450.100861,459.413330 404.365234,458.266602 377.127136,430.506470 
+                            C374.214203,427.537720 371.625732,425.325439 366.263184,427.671173 
+                            C366.263184,419.167206 366.156982,411.463013 366.323944,403.764709 
+                            C366.378357,401.254272 368.764313,400.951172 370.709686,400.431396 
+                            C396.426422,393.560486 422.140564,386.679565 447.853210,379.793335 
+                            C450.102783,379.190826 452.337585,378.533112 454.977295,377.809143 
+                        z"/>
+                        </svg>
+                    </div>
+
+                    <!-- FITNESS TEXT (Anchored to Logo) -->
+                    <div class="mt-2 reveal active">
+                        <span class="text-2xl md:text-4xl lg:text-5xl font-brutal text-coral tracking-widest uppercase block whitespace-nowrap">
+                            Fitness
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right Name: Crichton (Aligns Left on Desktop) -->
+                <div class="flex-1 w-full md:w-auto text-center md:text-left order-3 md:order-3">
+                    <h1 class="text-6xl md:text-8xl lg:text-9xl font-brutal uppercase tracking-tight leading-none text-white">
+                        Crichton
+                    </h1>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="relative h-[80vh] w-full overflow-hidden flex items-end">
+        <!-- Placeholder Banner Image -->
+        <img src="assets/Banner.JPG" 
+             alt="Man working out in Metro Vancouver" 
+             class="absolute inset-0 w-full h-full object-cover grayscale opacity-60">
+        
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+
+        <div class="container mx-auto px-6 pb-20 relative z-10 reveal">
+            <h2 class="text-4xl md:text-6xl font-brutal max-w-3xl leading-tight">
+                Forging Strength in <span class="text-coral">Metro Vancouver.</span>
+            </h2>
+            <p class="text-xl md:text-2xl mt-4 text-gray-300 max-w-xl">
+                Serving White Rock, Surrey, Langley, and Delta.
+            </p>
+            <a href="#contact" class="inline-block mt-8 px-8 py-4 bg-coral text-black font-brutal text-xl uppercase tracking-wider hover:bg-white transition-colors duration-300">
+                Book Session
+            </a>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="py-24 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="flex items-end justify-between mb-16 border-b border-zinc-800 pb-4 reveal">
+                <h3 class="text-5xl md:text-7xl font-brutal text-white">Services</h3>
+                <span class="text-zinc-500 font-bold hidden md:block">01 // WHAT WE DO</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="group border border-zinc-800 p-8 hover:bg-zinc-900 transition-all duration-500 reveal">
+                    <div class="text-coral text-4xl mb-6"><i class="fas fa-home"></i></div>
+                    <h4 class="text-2xl font-brutal uppercase mb-3 text-white">At Home Personal Training</h4>
+                    <p class="text-zinc-400">I bring the gym to you. Comprehensive workouts designed for your home environment anywhere in Surrey or White Rock.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group border border-zinc-800 p-8 hover:bg-zinc-900 transition-all duration-500 reveal delay-100">
+                    <div class="text-coral text-4xl mb-6"><i class="fas fa-dumbbell"></i></div>
+                    <h4 class="text-2xl font-brutal uppercase mb-3 text-white">Private Gym Session</h4>
+                    <p class="text-zinc-400">Train in a fully equipped private facility. No crowds, just focused work on your transformation.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group border border-zinc-800 p-8 hover:bg-zinc-900 transition-all duration-500 reveal delay-200">
+                    <div class="text-coral text-4xl mb-6"><i class="fas fa-child"></i></div>
+                    <h4 class="text-2xl font-brutal uppercase mb-3 text-white">Stretching</h4>
+                    <p class="text-zinc-400">Improve mobility and reduce injury risk with assisted stretching protocols tailored to your body.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="group border border-zinc-800 p-8 hover:bg-zinc-900 transition-all duration-500 reveal delay-300">
+                    <div class="text-coral text-4xl mb-6"><i class="fas fa-hands"></i></div>
+                    <h4 class="text-2xl font-brutal uppercase mb-3 text-white">Fascial Release</h4>
+                    <p class="text-zinc-400">Advanced recovery techniques to release tension, improve blood flow, and accelerate muscle repair.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS (SEO SCROLL) -->
+    <section class="py-20 bg-coral text-off-black overflow-hidden">
+        <div class="container mx-auto px-6 mb-12 text-center">
+            <h3 class="font-brutal text-4xl uppercase tracking-wide">Client Success Stories</h3>
+        </div>
+        <div class="marquee-container w-full">
+            <div class="marquee-content items-start">
+                
+                <!-- Testimonial 1 -->
+                <div class="w-[300px] md:w-[400px] mx-6 whitespace-normal flex flex-col">
+                    <p class="font-body text-sm md:text-base font-medium leading-relaxed mb-4">
+                        "I’ve struggled with back pain for years. Dennis’s focus on fascial release and proper stretching completely changed how I move. I can finally train without pain."
+                    </p>
+                    <span class="font-brutal text-xl uppercase">- Sarah J., White Rock</span>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="w-[300px] md:w-[400px] mx-6 whitespace-normal flex flex-col">
+                    <p class="font-body text-sm md:text-base font-medium leading-relaxed mb-4">
+                        "Working out at home was convenient, but Dennis brought the intensity I was missing. He utilizes my space perfectly and the results in 3 months have been incredible."
+                    </p>
+                    <span class="font-brutal text-xl uppercase">- Mike T., South Surrey</span>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="w-[300px] md:w-[400px] mx-6 whitespace-normal flex flex-col">
+                    <p class="font-body text-sm md:text-base font-medium leading-relaxed mb-4">
+                        "The private gym sessions are a game changer. No waiting for equipment, just pure focus. Dennis is extremely knowledgeable about biomechanics and injury prevention."
+                    </p>
+                    <span class="font-brutal text-xl uppercase">- Amanda L., Langley</span>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="w-[300px] md:w-[400px] mx-6 whitespace-normal flex flex-col">
+                    <p class="font-body text-sm md:text-base font-medium leading-relaxed mb-4">
+                        "I hired Dennis for stretching therapy after a car accident. His approach to mobility restoration is unmatched in Metro Vancouver. Highly recommended."
+                    </p>
+                    <span class="font-brutal text-xl uppercase">- David R., Delta</span>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="w-[300px] md:w-[400px] mx-6 whitespace-normal flex flex-col">
+                    <p class="font-body text-sm md:text-base font-medium leading-relaxed mb-4">
+                        "Dennis pushes you past your limits but in a safe way. I've never felt stronger. The combination of strength training and fascial work is unique."
+                    </p>
+                    <span class="font-brutal text-xl uppercase">- Chris P., White Rock</span>
+                </div>
+
+                 <!-- Testimonial 6 -->
+                 <div class="w-[300px] md:w-[400px] mx-6 whitespace-normal flex flex-col">
+                    <p class="font-body text-sm md:text-base font-medium leading-relaxed mb-4">
+                        "Professional, punctual, and results-driven. Whether it's at my home or in the gym, every session is planned out perfectly for my goals."
+                    </p>
+                    <span class="font-brutal text-xl uppercase">- Jessica M., Surrey</span>
+                </div>
+
+                <!-- DUPLICATES FOR INFINITE SCROLL -->
+                <!-- Testimonial 1 -->
+                <div class="w-[300px] md:w-[400px] mx-6 whitespace-normal flex flex-col">
+                    <p class="font-body text-sm md:text-base font-medium leading-relaxed mb-4">
+                        "I’ve struggled with back pain for years. Dennis’s focus on fascial release and proper stretching completely changed how I move. I can finally train without pain."
+                    </p>
+                    <span class="font-brutal text-xl uppercase">- Sarah J., White Rock</span>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="w-[300px] md:w-[400px] mx-6 whitespace-normal flex flex-col">
+                    <p class="font-body text-sm md:text-base font-medium leading-relaxed mb-4">
+                        "Working out at home was convenient, but Dennis brought the intensity I was missing. He utilizes my space perfectly and the results in 3 months have been incredible."
+                    </p>
+                    <span class="font-brutal text-xl uppercase">- Mike T., South Surrey</span>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="w-[300px] md:w-[400px] mx-6 whitespace-normal flex flex-col">
+                    <p class="font-body text-sm md:text-base font-medium leading-relaxed mb-4">
+                        "The private gym sessions are a game changer. No waiting for equipment, just pure focus. Dennis is extremely knowledgeable about biomechanics and injury prevention."
+                    </p>
+                    <span class="font-brutal text-xl uppercase">- Amanda L., Langley</span>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="w-[300px] md:w-[400px] mx-6 whitespace-normal flex flex-col">
+                    <p class="font-body text-sm md:text-base font-medium leading-relaxed mb-4">
+                        "I hired Dennis for stretching therapy after a car accident. His approach to mobility restoration is unmatched in Metro Vancouver. Highly recommended."
+                    </p>
+                    <span class="font-brutal text-xl uppercase">- David R., Delta</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="py-24 bg-zinc-950">
+        <div class="container mx-auto px-6">
+            <div class="flex items-end justify-between mb-16 border-b border-zinc-800 pb-4 reveal">
+                <h3 class="text-5xl md:text-7xl font-brutal text-white">The Work</h3>
+                <span class="text-zinc-500 font-bold hidden md:block">02 // GALLERY</span>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Portrait Placeholder 1 -->
+                <div class="relative aspect-[3/4] overflow-hidden reveal">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop" 
+                         alt="Dennis Crichton Personal Training" 
+                         class="w-full h-full object-cover brutal-img">
+                </div>
+                
+                <!-- Portrait Placeholder 2 -->
+                <div class="relative aspect-[3/4] overflow-hidden reveal delay-100">
+                    <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=2070&auto=format&fit=crop" 
+                         alt="Fascial Release Session" 
+                         class="w-full h-full object-cover brutal-img">
+                </div>
+
+                <!-- Portrait Placeholder 3 -->
+                <div class="relative aspect-[3/4] overflow-hidden reveal delay-200">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop" 
+                         alt="Gym Session Langley" 
+                         class="w-full h-full object-cover brutal-img">
+                </div>
+
+                 <!-- Portrait Placeholder 4 -->
+                 <div class="relative aspect-[3/4] overflow-hidden reveal">
+                    <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=2069&auto=format&fit=crop" 
+                         alt="Stretching Therapy" 
+                         class="w-full h-full object-cover brutal-img">
+                </div>
+
+                 <!-- Portrait Placeholder 5 -->
+                 <div class="relative aspect-[3/4] overflow-hidden reveal delay-100">
+                    <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=1974&auto=format&fit=crop" 
+                         alt="Fitness Instructor Vancouver" 
+                         class="w-full h-full object-cover brutal-img">
+                </div>
+
+                 <!-- Portrait Placeholder 6 -->
+                 <div class="relative aspect-[3/4] overflow-hidden reveal delay-200">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop" 
+                         alt="Weight Training Delta" 
+                         class="w-full h-full object-cover brutal-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section id="contact" class="py-24 bg-black relative">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="reveal">
+                    <h3 class="text-5xl md:text-7xl font-brutal text-white mb-8">Start Your<br><span class="text-coral">Journey</span></h3>
+                    <p class="text-zinc-400 text-lg mb-8 max-w-md">
+                        Ready to elevate your fitness? Whether you are in White Rock, Surrey, or anywhere in Metro Vancouver, let's get to work.
+                    </p>
+                    
+                    <div class="space-y-4 font-brutal text-2xl">
+                        <p class="text-white hover:text-coral transition-colors">SERVING METRO VANCOUVER</p>
+                        <p class="text-zinc-500">crichtonfitness.com</p>
+                    </div>
+                </div>
+
+                <!-- Formspree Form -->
+                <div class="bg-zinc-900 p-8 border border-zinc-800 reveal delay-100">
+                    <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block font-brutal text-white text-xl mb-2">Name</label>
+                            <input type="text" name="name" id="name" required 
+                                   class="w-full bg-black border border-zinc-700 p-4 text-white focus:outline-none focus:border-coral transition-colors">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block font-brutal text-white text-xl mb-2">Email</label>
+                            <input type="email" name="email" id="email" required 
+                                   class="w-full bg-black border border-zinc-700 p-4 text-white focus:outline-none focus:border-coral transition-colors">
+                        </div>
+
+                        <div>
+                            <label for="service" class="block font-brutal text-white text-xl mb-2">Interest</label>
+                            <select name="service" id="service" class="w-full bg-black border border-zinc-700 p-4 text-white focus:outline-none focus:border-coral transition-colors">
+                                <option value="Personal Training">Personal Training</option>
+                                <option value="Private Gym">Private Gym Session</option>
+                                <option value="Stretching">Stretching</option>
+                                <option value="Fascial Release">Fascial Release</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block font-brutal text-white text-xl mb-2">Goals</label>
+                            <textarea name="message" id="message" rows="4" required 
+                                      class="w-full bg-black border border-zinc-700 p-4 text-white focus:outline-none focus:border-coral transition-colors"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-coral text-black font-brutal text-2xl uppercase py-4 hover:bg-white transition-colors duration-300">
+                            Send Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-zinc-800 bg-black text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-brutal text-zinc-800 uppercase mb-4">Dennis Crichton Fitness</h2>
+            <p class="text-zinc-600 text-sm">© 2025 Crichton Fitness. All rights reserved.</p>
+            <p class="text-zinc-700 text-xs mt-2">Serving White Rock, Surrey, Langley, Delta, Metro Vancouver.</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+    <!-- Custom Scroll Animation Script -->
+    <script>
+        // Simple Intersection Observer for scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('.reveal');
+
+            const revealOnScroll = () => {
+                const windowHeight = window.innerHeight;
+                const elementVisible = 150;
+
+                reveals.forEach((reveal) => {
+                    const elementTop = reveal.getBoundingClientRect().top;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveal.classList.add('active');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', revealOnScroll);
+            // Trigger once on load
+            revealOnScroll();
+        });
+    </script>
+</body>
+</html>
